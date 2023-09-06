@@ -9,11 +9,11 @@ from concurrent.futures import ThreadPoolExecutor
 
 # Define Kafka configuration
 kafka_config = {
-    'bootstrap.servers': 'pkc-41p56.asia-south1.gcp.confluent.cloud:9092',
+    'bootstrap.servers': '',
     'sasl.mechanisms': 'PLAIN',
     'security.protocol': 'SASL_SSL',
-    'sasl.username': 'VDGKT22VE2X765XB',
-    'sasl.password': '0NP2EBHvffUFoBtguP9QifgT24PrFq5NzBthGwlnmWJSB2z8nVeEL7oY2PJSokcf',
+    'sasl.username': '',
+    'sasl.password': '',
      'group.id': '2'
     # 'auto.offset.reset': 'earliest'
 }
@@ -57,7 +57,7 @@ def kafka_process(msg,offset):
 # Create a Schema Registry client
 schema_registry_client = SchemaRegistryClient({
   'url': 'https://psrc-l622j.us-east-2.aws.confluent.cloud',
-  'basic.auth.user.info': '{}:{}'.format('GNEQ6SUQCNPAWUUM', 'SGHFgMPb2U5HbuE51NjZlge8SeFw6cTegw2NGPet7qHbBYF+fmgSz6TTjkxoT4Vy')
+  'basic.auth.user.info': '{}:{}'.format('', '')
 })
 
 # Fetch the latest Avro schema for the value
