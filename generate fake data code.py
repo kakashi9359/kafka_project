@@ -8,7 +8,7 @@ from datetime import datetime, timedelta
 db_settings = {
     'host': 'localhost',
     'user': 'root',
-    'password': 'ILoveChess1e4',
+    'password': '',
     'db': 'noob_db'
 }
 
